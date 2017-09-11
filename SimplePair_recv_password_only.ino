@@ -25,6 +25,7 @@ void setup() {
 
   if( PASSWORD != "") {
     //เชื่อมต่อ WiFi
+    Serial.println("WiFi connecting...");
     WiFi.begin(SSID.c_str(), PASSWORD.c_str());
     while (WiFi.status() != WL_CONNECTED);
     Serial.println("WiFi connected to ssid " + SSID);
