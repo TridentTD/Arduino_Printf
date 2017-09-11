@@ -10,6 +10,9 @@ String PASSWORD      = "9876543210123456";  // พาสเวิร์ดนี
 void setup() {
   Serial.begin(115200);
   Serial.println();
+  
+  WiFi.disconnect(true);
+  WiFi.softAPdisconnect(true);
 
   Serial.println("Simple-Pair AP Mode");
   SimplePair.mode(SP_AP);                         // กำหนด SimplePair เป็นโหมด AccessPoint เพื่อเป็นฝั่งส่งข้อมูล
