@@ -13,6 +13,7 @@ void setup() {
   Serial.println();
   
   //ตัดการเชื่อมต่อ WiFi เดิมๆที่เคยจำไว้ออก
+  WiFi.persistent(true);
   WiFi.disconnect(true);
   WiFi.softApdisconnect(true);
 
