@@ -15,7 +15,6 @@ void setup() {
   //ตัดการเชื่อมต่อ WiFi เดิมๆที่เคยจำไว้ออก
   WiFi.persistent(true);
   WiFi.disconnect(true);
-  WiFi.softApdisconnect(true);
 
   Serial.println("Simple-Pair STA Mode");
   
