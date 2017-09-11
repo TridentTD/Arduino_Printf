@@ -11,6 +11,10 @@ String PASSWORD;                         // PASSWORD ไม่ต้องกำ
 void setup() {
   Serial.begin(115200);
   Serial.println();
+  
+  //ตัดการเชื่อมต่อ WiFi เดิมๆที่เคยจำไว้ออก
+  WiFi.disconnect(true);
+  WiFi.softApdisconnect(true);
 
   Serial.println("Simple-Pair STA Mode");
   
