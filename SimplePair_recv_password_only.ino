@@ -31,8 +31,10 @@ void setup() {
     //เชื่อมต่อ WiFi
     Serial.println("WiFi connecting...");
     WiFi.begin(SSID.c_str(), PASSWORD.c_str());
-    while (WiFi.status() != WL_CONNECTED);
-    Serial.println("WiFi connected to ssid " + SSID);
+    while (WiFi.status() != WL_CONNECTED) {
+      delay(300); Serial.println(".");
+    }
+    Serial.println("\nWiFi connected to ssid " + SSID);
     Serial.print("IP Address is "); Serial.println(WiFi.localIP());
   }
 }
