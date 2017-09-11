@@ -5,9 +5,8 @@
 // Simple-Pair ที่จะจับคู่กัน ต้องตั้งค่านี้ให้ตรงกัน โดยมีความยาวไม่เกิน 16 ตัวอักษร
 #define SIMPLE_PAIR_KEY   "HELLO_SIMPLEPAIR"
 
-String AP_SSID          = "TridentTD_AP";
-String AP_PASSWORD      = "9876543210123456";  // พาสเวิร์ดของ AP นี้จะถูกส่งไปให้ทาง Simple-Pair 
-                                               // โดยมีความยาว 16 ตัวอักษรสูงสุด
+String PASSWORD      = "9876543210123456";  // พาสเวิร์ดนี้จะถูกส่งไปให้ทาง Simple-Pair 
+                                            // โดยมีความยาว 16 ตัวอักษรสูงสุด
 void setup() {
   Serial.begin(115200);
   Serial.println();
@@ -15,7 +14,7 @@ void setup() {
   Serial.println("Simple-Pair AP Mode");
   SimplePair.mode(SP_AP);                         // กำหนด SimplePair เป็นโหมด AccessPoint เพื่อเป็นฝั่งส่งข้อมูล
   SimplePair.setSimplePairKey(SIMPLE_PAIR_KEY);   // กำหนด กุญแจ SimplePair Key
-  SimplePair.setSimplePairData(AP_PASSWORD);      // ข้อมูล คือ พาสเวิร์ดของ AP นี้จะถูกส่งไปให้ทาง Simple-Pair 
+  SimplePair.setSimplePairData(PASSWORD);      // ข้อมูล คือ พาสเวิร์ดของ AP นี้จะถูกส่งไปให้ทาง Simple-Pair 
 }
 
 void loop() {
