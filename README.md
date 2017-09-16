@@ -30,12 +30,12 @@ C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\EEPROM\src
 void setup() {
   Serial.begin(115200); Serial.println();
 
-  int    addr     = 0x10;
-  String myString = "Hello EEPROM123";
-  int    len      = myString.length();
+  int    addr     = 0x10;              // Address บน EEPROM ที่ต้องการบันทึก/อ่านค่า
+  String myString = "Hello EEPROM123"; // String ที่ต้องการบันทึก
+  int    len      = myString.length(); // ความยาว String
 
-  EEPROM.writeString( addr, "Hello EEPROM123");
-  Serial.println(EEPROM.readString( addr , len));
+  EEPROM.writeString( addr, "Hello EEPROM123");   // บันทึก String ลงบน EEPROM
+  Serial.println(EEPROM.readString( addr , len)); // อ่านค่า String จาก EEPROM
 }
 
 void loop() {
