@@ -11,9 +11,12 @@ C:\Users\..ชื่อuser..\AppData\Local\Arduino15\packages\arduino\hardware\
 ก็จะสามารถใช้ฟังก์ชั่น printf ได้ใน Serial, lcd, client, Wire ฯลฯ  
   
 ตัวอย่างเช่น  
+
+```c
 lcd.printf("%02d:%02d:%02d", now.hour(), now.minute(), now.second());  
 Serial.printf("%02d:%02d:%02d", now.hour(), now.minute(), now.second());  
-  
+```
+
 เป็นต้น  
 
 EEPROM สำหรับ บันทึกและอ่านค่า String
