@@ -19,8 +19,8 @@ Serial.printf("%02d:%02d:%02d", now.hour(), now.minute(), now.second());
 
 เป็นต้น  
 
-EEPROM สำหรับ บันทึกและอ่านค่า String
----------------------------------
+EEPROM สำหรับ บันทึกและอ่านค่า String สำหรับ Arduino เท่านั้น
+-----------------------------------------------------
   
 ให้สำเนา EEPROM.h นี้ไปแทนที่ ของเดิมที่อยู่ในโฟลเดอร์  
 C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\EEPROM\src  
