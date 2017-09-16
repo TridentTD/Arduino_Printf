@@ -37,8 +37,12 @@ void setup() {
   String myString = "Hello EEPROM123"; // String ที่ต้องการบันทึก
   int    len      = myString.length(); // ความยาว String
 
-  EEPROM.writeString( addr, myString);            // บันทึก String ลงบน EEPROM
-  Serial.println(EEPROM.readString( addr , len)); // อ่านค่า String จาก EEPROM
+  // บันทึก String ลงบน EEPROM
+  EEPROM.writeString( addr, myString);
+
+  // อ่านค่า String จาก EEPROM
+  String eepromString = EEPROM.readString( addr , len); 
+  Serial.println( eepromString );
 }
 
 void loop() {
