@@ -3,9 +3,9 @@ Arduino Printf
 --------------
 
 สำเนา Print.h และ Print.cpp ไปแทนที่ ของเดิมที่อยู่ในโฟลเดอร์  
-C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino
-
-หรือ หากมีโฟลเดอร์นี้อยู่ในไปวางไว้ที่นี่ด้วย
+C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino  
+  
+หรือ หากมีโฟลเดอร์นี้อยู่ในไปวางไว้ที่นี่ด้วย  
 C:\Users\..ชื่อuser..\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.6.18\cores\arduino  
 
 ก็จะสามารถใช้ฟังก์ชั่น printf ได้ใน Serial, lcd, client, Wire ฯลฯ  
