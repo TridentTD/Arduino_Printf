@@ -31,8 +31,8 @@ C:\Program Files (x86)\Arduino\hardware\arduino\avr\libraries\EEPROM\src
 #include <EEPROM.h>
 
 void setup() {
-  Serial.begin(115200); Serial.println();
-
+  Serial.begin(115200);
+  
   int    addr     = 0x10;              // Address บน EEPROM ที่ต้องการบันทึก/อ่านค่า
   String myString = "Hello EEPROM123"; // String ที่ต้องการบันทึก
   int    len      = myString.length(); // ความยาว String
