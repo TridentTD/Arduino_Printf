@@ -13,8 +13,8 @@ C:\Users\..ชื่อuser..\AppData\Local\Arduino15\packages\arduino\hardware\
 ตัวอย่างเช่น  
 
 ```c
-lcd.printf("%02d:%02d:%02d", now.hour(), now.minute(), now.second());  
-Serial.printf("%02d:%02d:%02d", now.hour(), now.minute(), now.second());  
+lcd.printf("%02d:%02d:%02d", now.hour(), now.minute(), now.second());     // แสดงเวลาปัจจุบันออกจอ lcd เช่นได้ 12:45:34
+Serial.printf("%02d:%02d:%02d", now.hour(), now.minute(), now.second());  // แสดงเวลาปัจจุบันออก Serial monitor เช่นได้ 12:45:34
 ```
 
 เป็นต้น  
