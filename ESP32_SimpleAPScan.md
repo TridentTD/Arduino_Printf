@@ -1,6 +1,6 @@
 ```c
 /*
- * Simple AP Scan  by TridentTD
+ * ESP32 Simple AP Scan  by TridentTD
  * 23 October 2017
  */
 
