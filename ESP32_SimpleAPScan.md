@@ -60,6 +60,7 @@ static esp_err_t scan_handler(void *ctx, system_event_t *event){
     Serial.println();
     scan_status = SCAN_WAIT;
   }
+  return ESP_OK;
 }
 
 
