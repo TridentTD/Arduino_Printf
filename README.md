@@ -49,14 +49,10 @@ void loop() {
 }
 ```
 
-String split function
+String split function for ESP8266
 ---------------------
 ให้สำเนา WString.h และ WString.cpp นี้ไปแทนที่ ของเดิมที่อยู่ในโฟลเดอร์  
 C:\Users\[user_name]\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\[esp_version]\cores\esp8266
-
-และ แทนที่ของเดิมที่โฟลเดอร์
-C:\Program Files (x86)\Arduino\hardware\arduino\avr\cores\arduino
-
 
 ก็จะสามารถทำการตัดแบ่งคำ ได้ง่ายๆ ตามตัวอย่าง
 ```c
