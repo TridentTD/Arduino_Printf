@@ -67,10 +67,10 @@ void setup() {
 
   int     MAX = 10;           // ขนาดสูงสุดที่จะตัดแบ่งคำ
   String  str_split[MAX];     // ตัวแปร String ที่จะมาเก็บคำที่ตัดแบ่งแล้ว
-  String  delimitor = " ,.("; // หากพบ space หรือ , หรือ . หรือ ( จะใช้เป็นตัวตัดแบ่งคำ
+  String  delimiters = " ,.("; // หากพบ space หรือ , หรือ . หรือ ( จะใช้เป็นตัวตัดแบ่งคำ
 
   // myString ทำการตัดแบ่งคำ แล้วเก็บใน str_split[]
-  int count = myString.split( str_split, MAX, delimitor ); 
+  int count = myString.split( str_split, MAX, delimiters ); 
   for(int i =0; i < count ; i++){
     Serial.println(str_split[i]); // แสดงค่าที่ตัดแบ่งคำ
   }
